@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Zultra Legal</title>
+    <style>
+        /* --- APPLE-INSPIRED CSS --- */
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #1d1d1f;
+            --text-sub: #86868b;
+            --link-color: #06c;
+            --border-color: #d2d2d7;
+            --sidebar-bg: #f5f5f7;
+            
+            /* Zultra subtle branding */
+            --zultra-accent: #e056fd; 
+        }
+
+        /* Automatic Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1d1d1f;
+                --text-main: #f5f5f7;
+                --text-sub: #86868b;
+                --link-color: #2997ff;
+                --border-color: #424245;
+                --sidebar-bg: #2d2d2f;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+        }
+
+        /* --- GLOBAL HEADER --- */
+        .global-header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            background-color: rgba(var(--bg-color), 0.8);
+            backdrop-filter: saturate(100%) blur(10px);
+            -webkit-backdrop-filter: saturate(100%) blur(10px);
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .header-logo {
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .header-logo span { color: var(--zultra-accent); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            max-width: 980px;
+            margin: 60px auto 40px;
+            padding: 0 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.003em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: var(--text-sub);
+        }
+
+        /* --- MAIN LAYOUT --- */
+        .layout-container {
+            max-width: 980px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+        }
+
+        /* --- SIDEBAR (Table of Contents) --- */
+        .sidebar {
+            width: 250px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 100px; /* Offset for header */
+        }
+
+        .toc-list {
+            list-style: none;
+            border-left: 1px solid var(--border-color);
+            padding-left: 15px;
+        }
+
+        .toc-item {
+            margin-bottom: 15px;
+        }
+
+        .toc-link {
+            text-decoration: none;
+            color: var(--text-sub);
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .toc-link:hover {
+            color: var(--text-main);
+        }
+
+        /* --- ARTICLE CONTENT --- */
+        .content {
+            flex: 1;
+            font-size: 17px;
+            line-height: 1.58824;
+            font-weight: 400;
+            letter-spacing: -.022em;
+        }
+
+        .intro-text {
+            font-size: 24px;
+            line-height: 1.33337;
+            font-weight: 600;
+            letter-spacing: .009em;
+            margin-bottom: 40px;
+        }
+
+        .content section {
+            margin-bottom: 50px;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            line-height: 1.14286;
+            font-weight: 600;
+            letter-spacing: .007em;
+            margin-bottom: 20px;
+            padding-top: 40px; /* Offset for anchor jumping */
+        }
+
+        .content h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin: 25px 0 10px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .content a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- RESPONSIVE DESIGN --- */
+        @media (max-width: 768px) {
+            .layout-container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+                background: var(--sidebar-bg);
+                padding: 20px;
+                border-radius: 12px;
+                margin-bottom: 30px;
+            }
+            .toc-list {
+                border-left: none;
+                padding-left: 0;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="header-content">
+            <a href="#" class="header-logo">
+                <span>⚡</span> Zultra Legal
+            </a>
+            <div>Privacy</div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Zultra Privacy Policy</h1>
+        <p>Last Updated: March 2026</p>
+    </div>
+
+    <div class="layout-container">
+        
+        <aside class="sidebar">
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#philosophy" class="toc-link">Our Privacy Philosophy</a></li>
+                <li class="toc-item"><a href="#collection" class="toc-link">Personal Data We Collect</a></li>
+                <li class="toc-item"><a href="#usage" class="toc-link">How We Use Personal Data</a></li>
+                <li class="toc-item"><a href="#sharing" class="toc-link">How We Share Personal Data</a></li>
+                <li class="toc-item"><a href="#local-storage" class="toc-link">Local vs. Cloud Storage</a></li>
+                <li class="toc-item"><a href="#rights" class="toc-link">Your Privacy Rights</a></li>
+            </ul>
+        </aside>
+
+        <article class="content">
+            
+            <p class="intro-text" id="philosophy">
+                At Zultra, we believe privacy is a fundamental human right. We design our products to protect your personal information, restrict what we collect, and give you absolute control over your data.
+            </p>
+            <p>
+                This Privacy Policy describes how Zultra collects, uses, and shares your personal data across our suite of applications, including Zultra Music, Zultra Cloud, and Zultra AI. Please take a moment to familiarize yourself with our privacy practices.
+            </p>
+
+            <section id="collection">
+                <h2>Personal Data We Collect</h2>
+                <p>We believe in data minimization. We only collect the data necessary to provide you with the services you request. When you interact with Zultra apps, we may collect:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Your email address, password, and display name when you create an account via Zultra Cloud.</li>
+                    <li><strong>Integration Data:</strong> External API keys (such as Google Gemini API keys) that you voluntarily save to your Zultra Cloud profile to enable features in Zultra AI.</li>
+                    <li><strong>Device Information:</strong> Basic diagnostic information automatically collected by Firebase infrastructure for security and troubleshooting.</li>
+                </ul>
+                <p><em>Note on Media Files:</em> We do not upload, scan, or collect the MP3 or MP4 media files you play in Zultra Music. See the <a href="#local-storage">Local Storage section</a> below.</p>
+            </section>
+
+            <section id="usage">
+                <h2>How We Use Personal Data</h2>
+                <p>Zultra uses personal data to power our services, process your transactions, communicate with you, and ensure security. Examples include:</p>
+                <ul>
+                    <li><strong>Providing Services:</strong> Using your saved API keys to route your messages through the Zultra AI interface.</li>
+                    <li><strong>Account Security:</strong> Verifying your identity across our ecosystem using Google Firebase Authentication.</li>
+                    <li><strong>Communication:</strong> Sending password reset emails or critical security notifications regarding your account.</li>
+                </ul>
+            </section>
+
+            <section id="sharing">
+                <h2>How We Share Personal Data</h2>
+                <p><strong>Zultra does not sell your personal data.</strong> We never share your data with data brokers or advertising networks. We may share personal data with our trusted service providers under strict confidentiality agreements:</p>
+                <h3>Service Providers</h3>
+                <p>We utilize Google Cloud and Firebase infrastructure to securely host your account credentials and encrypted database records (such as your saved API keys). These providers are legally bound to protect your data and may only use it to provide hosting services to Zultra.</p>
+                <h3>Third-Party Integrations</h3>
+                <p>If you use Zultra AI, the text prompts you enter are transmitted directly to the AI provider (e.g., Google's Gemini API) using the API key you provide. Your interactions are subject to the respective privacy policies of those third-party AI providers.</p>
+            </section>
+
+            <section id="local-storage">
+                <h2>Local vs. Cloud Storage</h2>
+                <p>We separate how we handle your data to maximize your privacy and minimize cloud storage:</p>
+                <h3>Local Browser Storage (IndexedDB)</h3>
+                <p>When you upload media (audio or video files) to Zultra Music, these files are saved <strong>strictly locally</strong> in your web browser using IndexedDB. They are never transmitted to our servers, analyzed, or shared. Deleting your browser cache or using the "Clear Local Library" tool in Zultra Cloud will permanently remove these files.</p>
+                <h3>Cloud Storage (Firestore)</h3>
+                <p>Only essential cross-device data is saved to our secure cloud. Currently, this is limited to your Account Profile data and your saved Integrations (API keys).</p>
+            </section>
+
+            <section id="rights">
+                <h2>Your Privacy Rights</h2>
+                <p>We guarantee you the right to access, correct, export, and delete your personal data. We provide tools directly inside our applications to execute these rights.</p>
+                <ul>
+                    <li><strong>Access & Correction:</strong> You can view and edit your profile data and API keys at any time via the Zultra Cloud dashboard.</li>
+                    <li><strong>Deletion:</strong> You may permanently delete your Zultra account and all associated cloud data by visiting the Security tab in Zultra Cloud and selecting "Delete My Account." This action is immediate and irreversible.</li>
+                </ul>
+                <p>.</p>
+            </section>
+
+        </article>
+    </div>
+
+</body>
+</html>
